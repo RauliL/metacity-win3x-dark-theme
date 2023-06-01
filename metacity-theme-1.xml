@@ -17,12 +17,19 @@
 -->
 <metacity_theme>
   <info>
-    <name>Win3x</name>
+    <name>Win3x-dark</name>
     <author>Rauli Laine</author>
-    <copyright>&#194; 2019 Rauli Laine &lt;rauli.laine@iki.fi&gt;</copyright>
-    <date>April 1, 2019</date>
-    <description>Windows 3.x lookalike theme for Metacity</description>
+    <copyright>&#194; 2023 Rauli Laine &lt;rauli.laine@iki.fi&gt;</copyright>
+    <date>June 1, 2023</date>
+    <description>Windows 3.x lookalike theme for Metacity, dark version</description>
   </info>
+
+  <constant name="C_titlebar" value="#222222" />
+  <constant name="C_titlebar_unfocused" value="#2c2c2c" />
+  <constant name="C_titlebar_border_focused" value="#313131" />
+  <constant name="C_titlebar_highlight_unfocused" value="#3a3a3a" />
+  <constant name="C_title_focused" value="#f7f7f7" />
+  <constant name="C_title_unfocused" value="#b5b5b5" />
 
   <frame_geometry name="normal_geometry" has_title="true" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
     <distance name="left_width" value="4"/>
@@ -79,50 +86,50 @@
   <frame_style name="normal_focused_style" geometry="normal_geometry">
     <piece position="left_edge">
       <draw_ops>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="0" y2="height" width="1"/>
-        <line color="#000000" x1="3" y1="0" x2="3" y2="height" width="1"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="0" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="3" y1="0" x2="3" y2="height" width="1"/>
       </draw_ops>
     </piece>
     <piece position="right_edge">
       <draw_ops>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="0" y2="height" width="1"/>
-        <line color="#000000" x1="3" y1="0" x2="3" y2="height" width="1"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="0" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="3" y1="0" x2="3" y2="height" width="1"/>
       </draw_ops>
     </piece>
     <piece position="bottom_edge">
       <draw_ops>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="3" y1="0" x2="width-3" y2="0" width="1"/>
-        <line color="#000000" x1="0" y1="3" x2="width" y2="3" width="1"/>
-        <line color="#000000" x1="0" y1="0" x2="0" y2="3" width="1"/>
-        <line color="#000000" x1="width-1" y1="0" x2="width-1" y2="3" width="1"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="3" y1="0" x2="width-3" y2="0" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="3" x2="width" y2="3" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="0" y2="3" width="1"/>
+        <line color="C_titlebar_border_focused" x1="width-1" y1="0" x2="width-1" y2="3" width="1"/>
       </draw_ops>
     </piece>
     <piece position="left_titlebar_edge">
       <draw_ops>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="0" y2="height" width="1"/>
-        <line color="#000000" x1="3" y1="3" x2="3" y2="height" width="1"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="0" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="3" y1="3" x2="3" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
       </draw_ops>
     </piece>
     <piece position="right_titlebar_edge">
       <draw_ops>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="3" x2="0" y2="height" width="1"/>
-        <line color="#000000" x1="3" y1="0" x2="3" y2="height" width="1"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="3" x2="0" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="3" y1="0" x2="3" y2="height" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
       </draw_ops>
     </piece>
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#000080" x="0" y="0" width="width" height="height-1" filled="true"/>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="3" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
-        <line color="#000000" x1="0" y1="3" x2="width" y2="3" width="1"/>
-        <line color="#000000" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
+        <rectangle color="C_titlebar" x="0" y="0" width="width" height="height-1" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="3" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="3" x2="width" y2="3" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
       </draw_ops>
     </piece>
 
@@ -168,7 +175,7 @@
     </button>
     <piece position="title">
       <draw_ops>
-        <title x="width/2-title_width/2" y="height/2-title_height/2" color="#ffffff"/>
+        <title x="width/2-title_width/2" y="height/2-title_height/2" color="C_title_focused"/>
       </draw_ops>
     </piece>
   </frame_style>
@@ -176,9 +183,9 @@
   <frame_style name="normal(maximized)_focused_style" geometry="borderless_geometry" parent="normal_focused_style">
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#000080" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
-        <line color="#000000" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
+        <rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
       </draw_ops>
     </piece>
 
@@ -227,16 +234,16 @@
   <frame_style name="normal_unfocused_style" geometry="normal_geometry" parent="normal_focused_style">
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="true"/>
-        <rectangle color="#c0c0c0" x="0" y="0" width="width" height="3" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
-        <line color="#000000" x1="0" y1="3" x2="width" y2="3" width="1"/>
-        <line color="#000000" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
+        <rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_highlight_unfocused" x="0" y="0" width="width" height="3" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="3" x2="width" y2="3" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
       </draw_ops>
     </piece>
     <piece position="title">
       <draw_ops>
-        <title x="width/2-title_width/2" y="height/2-title_height/2" color="#000000"/>
+        <title x="width/2-title_width/2" y="height/2-title_height/2" color="C_title_unfocused"/>
       </draw_ops>
     </piece>
   </frame_style>
@@ -244,9 +251,9 @@
   <frame_style name="normal(maximized)_unfocused_style" geometry="borderless_geometry" parent="normal_unfocused_style">
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="true"/>
-        <line color="#000000" x1="0" y1="0" x2="width" y2="0" width="1"/>
-        <line color="#000000" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
+        <rectangle color="#2f2f2f" x="0" y="0" width="width" height="height" filled="true"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="0" x2="width" y2="0" width="1"/>
+        <line color="C_titlebar_border_focused" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
       </draw_ops>
     </piece>
 
@@ -266,33 +273,33 @@
 
     <piece position="left_edge">
       <draw_ops>
-        <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
     <piece position="right_edge">
       <draw_ops>
-        <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
     <piece position="bottom_edge">
       <draw_ops>
-        <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
     <piece position="left_titlebar_edge">
       <draw_ops>
-        <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
     <piece position="right_titlebar_edge">
       <draw_ops>
-        <rectangle color="#000000" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_border_focused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
 
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#000080" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
 
@@ -301,7 +308,7 @@
 
     <piece position="title">
       <draw_ops>
-        <title x="width/2-title_width/2" y="height/2-title_height/2" color="#ffffff"/>
+        <title x="width/2-title_width/2" y="height/2-title_height/2" color="C_title_focused"/>
       </draw_ops>
     </piece>
 
@@ -324,12 +331,12 @@
   <frame_style name="utility_unfocused_style" geometry="utility_geometry" parent="utility_focused_style">
     <piece position="titlebar">
       <draw_ops>
-        <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="true"/>
+        <rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
       </draw_ops>
     </piece>
     <piece position="title">
       <draw_ops>
-        <title x="width/2-title_width/2" y="height/2-title_height/2" color="#000000"/>
+        <title x="width/2-title_width/2" y="height/2-title_height/2" color="C_title_unfocused"/>
       </draw_ops>
     </piece>
   </frame_style>
